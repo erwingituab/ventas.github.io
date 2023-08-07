@@ -1,0 +1,80 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+}
+.contenedor-venta{	
+	margin: 0 auto;
+	box-shadow: 3px 4px 5px #999;
+	margin: 20px auto;	
+	border: 1px solid #ddd;
+}
+.contenedor-venta ul{
+	list-style: none;
+	display: flex;
+}
+.contenedor-venta ul li{
+	width: auto;
+}
+.contenedor-venta ul li a{
+	padding: 10px 20px;		
+	background: #e9e9e9;
+	border-bottom: 1px solid #000d1a;
+	color: #000000;
+}
+.contenedor-venta ul li a:hover{
+	background-color: #fff;
+}
+.contenedor-venta ul li a.activo{
+	border: 1px solid #000d1a;
+	border-bottom: 0;
+	background: #000d1a;
+	color: #fff;
+}
+.contenedor-venta ul li a.activo:hover{
+	background-color: #000d1a;
+}
+.contenedor-venta .secciones{
+	padding: 20px;
+	width: 1000px;
+}
+.contenedor-venta .secciones article{
+	display: block;
+}
+.contenedor-venta .secciones article .titulo{
+	width: 100%;
+	border-bottom: 2px solid #ddd;
+	margin-bottom: 10px;
+	text-align: center;
+	padding: 10px;
+}
+.contenedor-venta .secciones article .titulo ul{
+	float: right;
+	border-bottom: 0;
+}
+.contenedor-venta .secciones article .titulo ul li a.pdf{
+	background-color: red;
+	color: #fff;
+}
+.contenedor-venta .secciones article .titulo ul li a.excel{
+	background-color: green;
+	color: #fff;
+}
+.contenedor-venta .secciones article .titulo ul li a.print{
+	background-color: #428bca;
+	color: #fff;
+}
+.contenedor-venta .secciones article .titulo h1{
+	font-size: 25px;
+	font-family: 'Tahoma';
+	font-weight: 300;
+	text-transform: uppercase;
+}
+@media only screen and (max-width: 900px){
+	.contenedor-venta{
+		margin: 20px;
+	}
+	.contenedor-venta .secciones{
+		width: 100%;
+	}
+}

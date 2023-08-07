@@ -1,0 +1,89 @@
+@media (max-width: 870px), handheld and (orientation: landscape)
+{
+	.contenedor nav ul li{		
+		flex-basis: 0;
+		flex-grow: 1;
+	}
+	.contenedor nav ul li a{
+		text-align: center;
+	}
+	.contenedor nav ul li a span.texto{
+		padding: 15px 0px;				
+	}	
+	/*Formulario*/	
+	.contenedor-form{
+		width: 100%;
+		display: flex;
+	}
+	.contenedor-form form{
+		padding: 10px 8px;
+		margin: 10px;
+		background-color: #f1f1f1;
+	}
+	.contenedor-form form .titulo-usr{
+		padding: 15px 8px;
+		display: flex;
+		background-color: #f1f1f1;
+	}	
+	
+	.contenedor-form form fieldset{
+		border: 0px;
+	}
+	.contenedor-form form fieldset .input{
+		width: 100%;
+	}
+	.contenedor-form form fieldset legend{
+		display: none;
+	}
+	.contenedor-form form fieldset .input input[type=text],select{
+		width: 100%;
+		padding: 8px 10px;
+		outline: none;
+		border: 1px solid #ddd;
+		margin: 3px 0px;
+	}
+	.contenedor-form form fieldset .input input[type=text]:focus{
+		border: 1px solid #486977;		
+	}
+	.contenedor-form form fieldset .input select:focus{
+		border: 1px solid #486977;		
+	}
+	.contenedor-form form .input input[type=reset]{
+		display: none;
+	}
+	.contenedor-form form .input input[type=submit]{
+		width: 100%;
+		padding: 8px 0px;
+		margin: 20px 0px;
+		box-sizing: border-box;
+		cursor: pointer;
+		background-color: #364D73;
+		color: #000000;
+		outline: none;
+		border: 1px solid #364D73;
+	}
+	.contenedor-form form .input input[type=submit]:focus{
+		color: #fff;
+		background-color: #484AA8;
+	}
+	.contenedor-form form .input input[type=submit]:hover{
+		color: #fff;
+		background-color: #484AA8;
+	}
+}
+@media (max-width: 500px), handheld and (orientation: landscape)
+{
+	.contenedor-form .data{
+		display: none;
+	}
+	.contenedor-form form{
+		width: 100%;
+		margin: 20px 30px;
+	}
+	.contenedor nav ul li a span.texto{
+		display: none;				
+	}
+	nav a .texto{
+		display: none;
+	}
+}

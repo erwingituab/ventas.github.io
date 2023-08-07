@@ -1,0 +1,219 @@
+
+.contenedor-form{
+	width: 80%;	
+}
+.contenedor-form form{	
+	padding: 10px 20px;
+	border-top-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	border:1px solid black;	
+}
+.contenedor-form form .titulo-usr{
+	width: 100%;	
+	padding: 10px 0px;
+	display: inline-flex;
+}
+.contenedor-form form .titulo-usr #titulo{
+	margin: 0;
+	padding: 0;
+	font-size: 30px;
+	color: #A03F25;
+	font-weight: 100;
+	font-family: 'tahoma';
+}
+.contenedor-form form .titulo-usr span{
+	font-size: 30px;
+	color: #273B69;	
+}
+.contenedor-form form fieldset{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.contenedor-form form fieldset .input{
+	width: 48%;	
+	align-items: center;	
+	justify-content: center;
+	margin-bottom: 5px;
+}
+.contenedor-form form fieldset .input.btn{
+	width: 100%;
+	display: flex; justify-content: space-between;
+
+}
+.contenedor-form form fieldset .input label{
+	font-size: 18px;
+	color: #333;
+	font-family: 'tahoma';
+	margin-bottom: 5px;
+}
+.contenedor-form form .input input[type=text],input[type=file],select{
+	width: 100%;
+	padding: 5px 8px;
+	border:1px solid #ddd;	
+	outline: none;	
+	box-sizing: border-box;
+}
+.contenedor-form form .input input[type=text]:focus{
+	border:1px solid #0F5373;
+}
+.contenedor-form form .input select:focus{
+	border:1px solid #0F5373;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 48%;
+}
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
+.contenedor-form form .input input[type=submit]:focus{
+	border:1px solid #0F5373;
+}
+.contenedor-form form .input input[type=reset]:focus{
+	border:1px solid #0F5373;
+}
+.contenedor-form form .table{
+	width: 100%;
+	overflow-y: auto;
+	max-height: 180px;	
+}
+.contenedor-form form .table table{
+	width: 100%;
+	border-collapse: collapse;
+	background-color: #fff;
+}
+.contenedor-form form .table table th{
+	padding: 8px 10px;
+	text-align: left;
+	border:1px solid black;
+	background-color: #B1C5CB;
+}
+.contenedor-form form .table table td{
+	padding: 8px 10px;
+	border:1px solid black;
+}
+.contenedor-form form .table table td a{
+	border:1px solid black;
+	padding: 3px;
+	border-radius: 3px;
+	cursor: pointer;
+	margin: 0px 5px;
+}
+.contenedor-form form .table table td a#update:hover{
+	background-color: #008CBA;
+	color: #fff;
+}
+.contenedor-form form .table table td a#delete:hover{
+	background-color: tomato;
+	color: #fff;
+}
+.contenedor-form form .table table tr:hover {background-color: #f5f5f5;}
+.contenedor-form form .table table tr:nth-child(even){background-color: #f2f2f2}
+.contenedor-form form .paginador
+{
+	
+	width: 100%;
+}
+.contenedor-form form .paginador ul{	
+	list-style: none;	
+	margin-top: 15px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-end;
+}
+.contenedor-form form .paginador a, .pageSelected{
+	color: #428bca;
+	border:1px solid #ddd;
+	padding: 5px;
+	display: inline-block;
+	font-size: 14px;
+	text-align: center;
+	width: 35px;
+	text-decoration: none;
+}
+.contenedor-form form .paginador a:hover{
+	background: #ddd;
+}
+.pageSelected{
+	color: #fff;
+	background: #428bca;
+	border:1px solid #428bca;
+}
+.prevPhoto {
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+    height: 150px;
+    border: 1px solid #CCC;
+    position: relative;
+    cursor: pointer;
+    background: url(../images/uploads/user.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: auto;
+}
+.prevPhoto label{
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.prevPhoto img{
+	width: 100%;
+	height: 100%;
+}
+.upimg, .notBlock{
+	display: none !important;
+}
+.errorArchivo{
+	font-size: 16px;
+	font-family: arial;
+	color: #cc0000;
+	text-align: center;
+	font-weight: bold; 
+	margin-top: 10px;
+}
+.delPhoto{
+	color: #FFF;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	background: red;
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	z-index: 10;
+}
+#tbl_list_productos img{
+	width: 50px;
+}
+.imgProductoDelete{
+	width: 175px;
+}

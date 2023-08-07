@@ -1,0 +1,117 @@
+.contenedor-form{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;		
+	justify-content: space-between;
+}
+.contenedor-form form{
+	width: 30%;		
+	text-align: center;
+	padding: 20px;
+	margin:0px 50px;
+	border: 1px solid black;
+}
+.contenedor-form form img{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;	
+}
+.contenedor-form form .input{
+	width: 100%;
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 5px 0px;
+	border-bottom:1px solid #000;
+	margin-bottom: 5px;
+
+}
+.contenedor-form form .input label{
+	padding: 3px;
+}
+.contenedor-form form fieldset{
+	margin: 10px 0px;
+	padding: 5px;
+	box-sizing: border-box;
+}
+.contenedor-form form fieldset input[type=text],input[type=password]{
+	width: 100%;
+	padding: 5px 8px;
+	border:1px solid #ddd;	
+	outline: none;	
+	box-sizing: border-box;
+	margin-top: 5px;
+}
+.contenedor-form form fieldset input[type=text]:focus{
+	border:1px solid #0F5373;
+}
+.contenedor-form form fieldset input[type=password]:focus{
+	border:1px solid #0F5373;
+}
+.contenedor-form form input[type=submit]{
+	width: 100%;
+	padding: 10px 12px;
+	cursor: pointer;
+}
+.contenedor-form form .photo .prevPhoto {
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+    height: 150px;
+    border: 1px solid #CCC;
+    position: relative;
+    cursor: pointer;
+    /*background: url(../images/uploads/user.png);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: auto;
+}
+.contenedor-form form .photo .prevPhoto label{
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.contenedor-form form .photo .prevPhoto img{
+	width: 100%;
+	height: 100%;
+}
+.contenedor-form form .photo .upimg, .notBlock{
+	display: none !important;
+}
+.contenedor-form form .photo .errorArchivo{
+	font-size: 16px;
+	font-family: arial;
+	color: #cc0000;
+	text-align: center;
+	font-weight: bold; 
+	margin-top: 10px;
+}
+.contenedor-form form .photo .delPhoto{
+	color: #FFF;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	background: red;
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	z-index: 10;
+}
+.contenedor-form form .photo #tbl_list_productos img{
+	width: 50px;
+}
+.contenedor-form form .photo .imgProductoDelete{
+	width: 175px;
+}

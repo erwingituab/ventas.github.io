@@ -1,0 +1,143 @@
+.contenedor-venta .secciones #tab1{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.contenedor-venta .secciones #tab1 form{
+	width: 100%;
+	height: 100%;	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;	
+}
+.contenedor-venta .secciones #tab1 form .input{
+	width: 33%;	
+}
+.contenedor-venta .secciones #tab1 form .contenedorcliente{	
+	width: 100%;		
+}
+.contenedor-venta .secciones #tab1 form .contenedorcliente fieldset{
+	width: 100%;	
+	display: flex;	
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: #f1f1f1;
+	padding: 0px 10px 10px 10px;
+}
+.contenedor-venta .secciones #tab1 form .contenedorcliente input[type=button]{
+	width: 100%;
+	border: none;
+	color: white;
+	padding: 8px 3px;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 16px;
+	background-color: #008CBA;
+	margin: 8px 0px;
+	outline: none;
+	display: none;
+}
+.contenedor-venta .secciones #tab1 form .contenedorcliente input[type=button]:active{
+	transform: scale(1.01);
+}
+.contenedor-venta .secciones #tab1 form .input input{
+	width: 100%;
+	padding: 5px 10px;
+	outline: none;
+	border: 1px solid #DDD;
+}
+.contenedor-venta .secciones #tab1 form .input input:focus{
+	border: 1px solid #6B7183;
+}
+.contenedor-venta .secciones #tab1 form .input label{
+	margin-right: 5px;
+	font-family: Tahoma;
+}
+.contenedor-venta .secciones #tab1 form .input .numventa{
+	width: 100%;
+	height: 100%;	
+	background-color: #000d1a;	
+	border-radius: 5px;
+	text-align: center;
+	color: #fff;
+	padding: 8px 0px;
+}
+.contenedor-venta .secciones #tab1 form .input .numventa h1{
+	font-size: 18px;
+	font-weight: 300;
+	font-family: "Tahoma";
+	letter-spacing: 1px;
+	
+}
+.contenedor-venta .secciones #tab1 form .input .numventa p{
+	font-weight: bold;
+	font-family: "Tahoma";
+	font-size: 18px;	
+}
+.contenedor-venta .secciones #tab1 form .contenedorproducto{
+	width: 100%;	
+}
+.contenedor-venta .secciones #tab1 form .contenedorproducto fieldset{
+	width: 100%;	
+	background-color: #f1f1f1;
+	padding: 0px 10px 10px 10px;
+}
+.contenedor-venta .secciones #tab1 form .contenedorproducto fieldset table{
+	width: 100%;
+	border-collapse: collapse;
+}
+.contenedor-venta .secciones #tab1 form .contenedorproducto fieldset table thead{
+	padding: 8px 10px;
+}
+.contenedor-venta .secciones #tab1 form .contenedorproducto fieldset table thead th{
+	text-align: left;
+	padding: 8px 10px;
+}
+.contenedor-venta .secciones #tab1 form .contenedorproducto fieldset table tr{
+
+}
+.contenedor-venta .secciones #tab1 form .contenedorproducto fieldset table td{
+	padding: 8px 10px;
+	border: 1px solid black;
+	background-color: #fff;
+}
+.contenedor-venta .secciones #tab1 form .contenedorproducto fieldset .input input{
+	width: 100%;
+}
+.overlay{
+	background-color: rgba(0, 0, 0, .3);
+	position: fixed;/*abarca toda la pantalla*/
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	visibility: hidden;
+}
+.overlay.mostrar{
+	visibility: visible;
+}
+.popup{
+	background-color: #f8f8f8;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .3);
+	border-radius: 3px;
+	font-family: Tahoma;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+}
+.popup .btn-cerrar-popup{
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	color: #BBBBBB;
+	transition: .3s ease all;
+}
+.popup .btn-cerrar-popup:hover{
+	color: #000;
+}
